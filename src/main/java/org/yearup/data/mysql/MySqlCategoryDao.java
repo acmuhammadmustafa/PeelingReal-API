@@ -13,16 +13,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
-{
+public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao {
+
     public MySqlCategoryDao(DataSource dataSource)
     {
         super(dataSource);
     }
 
     @Override
-    public List<Category> getAllCategories()
-    {
+    public List<Category> getAllCategories() {
         List<Category> categories = new ArrayList<>();
 
         String query = "select * from categories";
@@ -47,8 +46,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public Category getById(int categoryId)
-    {
+    public Category getById(int categoryId) {
         String query = "select * from categories where category_id = ?";
 
         try (Connection connection = getConnection())
@@ -72,8 +70,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public Category create(Category category)
-    {
+    public Category create(Category category) {
         String query = "insert into categories(name, description) values (?, ?)";
 
         try (Connection connection = getConnection())
@@ -104,8 +101,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public void update(int categoryId, Category category)
-    {
+    public void update(int categoryId, Category category) {
         String query = "update categories set name = ?, description = ? where category_id = ?";
 
         try (Connection connection = getConnection())
@@ -124,8 +120,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     }
 
     @Override
-    public void delete(int categoryId)
-    {
+    public void delete(int categoryId) {
         String query = "delete from categories where category_id = ?";
 
         try (Connection connection = getConnection())
@@ -141,8 +136,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         }
     }
 
-    private Category mapRow(ResultSet row) throws SQLException
-    {
+    private Category mapRow(ResultSet row) throws SQLException {
         int categoryId = row.getInt("category_id");
         String name = row.getString("name");
         String description = row.getString("description");
