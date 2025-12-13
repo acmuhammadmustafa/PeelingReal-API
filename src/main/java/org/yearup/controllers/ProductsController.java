@@ -20,10 +20,7 @@ public class ProductsController
 
     @Autowired
     public ProductsController(ProductDao productDao)
-    {
-        this.productDao = productDao;
-    }
-
+    {this.productDao = productDao; }
     @GetMapping("")
     @PreAuthorize("permitAll()")
     public List<Product> search(@RequestParam(name="cat", required = false) Integer categoryId,
@@ -38,7 +35,7 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "ProductsController search error");
         }
     }
 
@@ -57,7 +54,7 @@ public class ProductsController
         }
         catch(Exception ex)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "getById() ");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "getById() error");
         }
     }
 

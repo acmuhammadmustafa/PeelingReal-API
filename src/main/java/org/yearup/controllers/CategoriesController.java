@@ -28,8 +28,8 @@ public CategoriesController(CategoryDao categoryDao, ProductDao productDao){
     this.categoryDao = categoryDao;
     this.productDao = productDao;
 }
-    // add the appropriate annotation for a get action
-    @GetMapping("")
+
+    @GetMapping("") // add the appropriate annotation for a get action
     @PreAuthorize("permitAll()")
     public List<Category> getAll() {
         try {
