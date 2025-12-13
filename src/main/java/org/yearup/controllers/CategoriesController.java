@@ -66,7 +66,7 @@ public CategoriesController(CategoryDao categoryDao, ProductDao productDao){
     }
 
     @PostMapping // add annotation to call this method for a POST action
-    @PreAuthorize("hasRole('ROLE_ADMIN') ")// add annotation to ensure that only an ADMIN can call this function
+    @PreAuthorize("hasRole('ROLE_ADMIN')")// add annotation to ensure that only an ADMIN can call this function
     @ResponseStatus(HttpStatus.CREATED)
     public Category addCategory(@RequestBody Category category)
     {
@@ -76,7 +76,6 @@ public CategoriesController(CategoryDao categoryDao, ProductDao productDao){
             throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "addCategory() Error");
         }
     }
-    // DONE FOR NOW -----------------------------------------------------------------
     @PutMapping("/{id}") // add annotation to call this method for a PUT (update) action - the url path must include the categoryId
     @PreAuthorize("hasRole('ROLE_ADMIN')") // add annotation to ensure that only an ADMIN can call this function
     public void updateCategory(@PathVariable int id, @RequestBody Category category)
