@@ -60,8 +60,7 @@ public class ProductsController
 
     @PostMapping()
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public Product addProduct(@RequestBody Product product)
-    {
+    public Product addProduct(@RequestBody Product product) {
         try
         {
             return productDao.create(product);
@@ -88,8 +87,7 @@ public class ProductsController
 
     @DeleteMapping("{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public void deleteProduct(@PathVariable int id)
-    {
+    public void deleteProduct(@PathVariable int id) {
         try
         {
             var product = productDao.getById(id);

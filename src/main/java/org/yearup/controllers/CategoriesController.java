@@ -16,7 +16,6 @@ import java.util.List;
 @CrossOrigin // enables cross-origin resource sharing only for this specific method (https://spring.io/guides/gs/rest-service-cors (frontend))
 
 public class CategoriesController {
-
     private CategoryDao categoryDao;
     private ProductDao productDao;
 
@@ -44,7 +43,7 @@ public class CategoriesController {
 
         return category; // get the category by id
         } catch (Exception e){
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR,"getById Error");
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"getById Error");
         }
     }
 
