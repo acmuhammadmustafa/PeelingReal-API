@@ -1,6 +1,6 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Title: PeelingReal
+Title: Peeling Real
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -31,22 +31,20 @@ Features:
 
 4.) Able to login.
 
-5.) (Login required) Add items into your shopping cart.
+5.) (Admin required) Add categories.
 
-6.) (Login required) Remove items into your shopping cart.
+6.) (Admin required) Remove categories.
 
-7.) (Admin required) Add categories.
-
-8.) (Admin required) Remove categories.
-
-9.) (Admin required) Update categories.
+7.) (Admin required) Update categories.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 TO-DO Features:
 
-1.) The ability to checkout items from shopping cart.
-2.) Add User Profiles.
+1.) (Login required) Remove items into your shopping cart.
+2.) (Login required) Add items into your shopping cart.
+3.) The ability to checkout items from shopping cart.
+4.) Add User Profiles.
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Layout Diagram:
@@ -54,20 +52,24 @@ Layout Diagram:
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Helper Menu:
+Updated MySQL:
+
+<img width="549" height="475" alt="image" src="https://github.com/user-attachments/assets/77bb26b2-637b-4d24-996a-ead99e8381bb" />
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-FileWriter/BufferedWriter:
+Fixing Minimum/Maximum Price Filter:
+
+<img width="958" height="648" alt="image" src="https://github.com/user-attachments/assets/bed9e351-48c7-4966-aa60-7fd7404e25ba" />
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Program being run:
 
-<img width="449" height="345" alt="image" src="https://github.com/user-attachments/assets/e947575d-989b-4ba6-a44c-9561e2ce1546" />
+<img width="365" height="309" alt="image" src="https://github.com/user-attachments/assets/bf7527dd-183a-4422-91bd-bc18c0e99d87" />
 
-<img width="450" height="350" alt="image" src="https://github.com/user-attachments/assets/50892e91-58d3-4218-b4ff-33df2f4038e1" />
+<img width="897" height="374" alt="image" src="https://github.com/user-attachments/assets/b3029755-c348-4ad8-9133-5625aaaaecca" />
 
-<img width="995" height="417" alt="image" src="https://github.com/user-attachments/assets/286b0c55-f322-4e5f-9341-4c34433d49dd" />
+<img width="1908" height="852" alt="image" src="https://github.com/user-attachments/assets/f8e1d22e-061f-4739-baa8-9872073db603" />
