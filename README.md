@@ -4,7 +4,8 @@ Title: Peeling Real
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Overview: Peeling Real is an API project that allows you to login, view items through filtering between categories, or colors, and add items into your shopping cart. If you're an admin, you are able to add, update, or delete categories.
+Overview: Peeling Real is an API project that allows you to login, view items through filtering between categories, colors, or price. If you're an admin, you are able to add, update, or delete categories.
+
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 How to Run:
@@ -42,13 +43,12 @@ Features:
 TO-DO Features:
 
 1.) (Login required) Remove items into your shopping cart.
+
 2.) (Login required) Add items into your shopping cart.
+
 3.) The ability to checkout items from shopping cart.
+
 4.) Add User Profiles.
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-Layout Diagram:
-
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
