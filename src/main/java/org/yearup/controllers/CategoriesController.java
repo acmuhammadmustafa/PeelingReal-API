@@ -78,8 +78,8 @@ public class CategoriesController {
     }
 
 
-    @DeleteMapping("/{id}")// add annotation to call this method for a DELETE action - the url path must include the categoryId
-    @PreAuthorize("hasRole('ROLE_ADMIN')")// add annotation to ensure that only an ADMIN can call this function
+    @DeleteMapping("/{id}") // add annotation to call this method for a DELETE action - the url path must include the categoryId
+    @PreAuthorize("hasRole('ROLE_ADMIN')") // add annotation to ensure that only an ADMIN can call this function
     @ResponseStatus(HttpStatus.NO_CONTENT) // Without this annotation, Spring would return "200 OK"
     public void deleteCategory(@PathVariable int id) {
         try{
